@@ -1,0 +1,17 @@
+  /* Container for images */
+  .image-container {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  .image-container img {
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  .image-container img:hover {
+    transform: scale(1.1); /* Enlarge image by 10% */
+  }
