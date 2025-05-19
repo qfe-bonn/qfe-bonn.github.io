@@ -1,327 +1,458 @@
-<!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>QFE Bonn</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/modal.css">
-		<link rel="stylesheet" href="assets/css/scroll.css">
-		<link rel="stylesheet" href="assets/css/img-container.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QFE Bonn</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png" />
+</head>
+<body>
+  <div class="flex-col min-h-screen">
+    <header class="sticky-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img src="/images/logo.png" alt="QFEbonn Logo" class="logo-image">
+            </a>
+          </div>
+          <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav class="main-nav">
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="timeline.html" class="nav-link">Timeline</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">Quantitative Finance & Economics Bonn</h1>
+                <p class="hero-description">
+                  Bridging theory and practice in quantitative finance and economics through education, research, and industry
+                  connections.
+                </p>
+              </div>
+              <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg">
+                  Join Us
+                  <i class="fa-solid fa-chevron-right btn-icon"></i>
+                </button>
+              </div>
+            </div>
+            <img
+              src="https://placehold.co/800x550"
+              alt="Hero Image"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </section>
 
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge">About Us</div>
+            <h2 class="section-title">Our Organization</h2>
+            <p class="section-description">
+              QFE Bonn is a student-led organization dedicated to exploring the intersection of
+              economics, finance, and data science. We provide members with educational resources, networking
+              opportunities, and hands-on experience in quantitative finance and economics.
+            </p>
+          </div>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-graduation-cap feature-icon"></i>
+              </div>
+              <h3 class="feature-title">Education</h3>
+              <p class="feature-description">
+                Workshops, seminars, and study groups on quantitative methods, financial modeling, and programming.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-chart-line feature-icon"></i>
+              </div>
+              <h3 class="feature-title">Research</h3>
+              <p class="feature-description">
+                Collaborative research projects on market trends, algorithmic trading, and financial data analysis.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-users feature-icon"></i>
+              </div>
+              <h3 class="feature-title">Networking</h3>
+              <p class="feature-description">
+                Connections with industry professionals, alumni, and peer organizations in the finance sector.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
+      <!-- Events Section -->
+      <section id="events" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge">Events</div>
+            <h2 class="section-title">Our Sessions</h2>
+            <p class="section-description">
+              Join us for our regular events and special workshops designed to enhance your quantitative finance
+              knowledge.
+            </p>
+          </div>
+          
+          <div class="events-grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Open Session</h3>
+                <p class="card-subtitle">June 6, 2025 • 14:00</p>
+              </div>
+              <div class="card-content">
+                <p class="card-text">
+                  QFE Bonn opens its doors to all interested students!
+                  This session introduced the club's vision, project opportunities, and how to get involved.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline btn-sm btn-full">
+                  <i class="fa-solid fa-calendar btn-icon-left"></i>
+                  Register
+                </button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Project Session</h3>
+                <p class="card-subtitle">Alternate Fridays • 14:00</p>
+              </div>
+              <div class="card-content">
+                <p class="card-text">
+                  Structured sessions with formal agenda such as project building,
+                  updates, presentation and feedback.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline btn-sm btn-full">
+                  <a href="https://docs.google.com/spreadsheets/d/1f-JyNP6Vpq5yo3EHI-Pg1sf_6wvy7UxV/edit?usp=sharing&ouid=111839148715847994525&rtpof=true&sd=true">
+                  <i class="fa-solid fa-calendar btn-icon-left"></i>
+                  Session Agenda
+                  </a>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Coding Session</h3>
+                <p class="card-subtitle">Alternate Fridays • 14:00</p>
+              </div>
+              <div class="card-content">
+                <p class="card-text">
+                  Relaxing space for focused coding and peer support.
+                  Bring your own homework or side projects to work on.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-footer">
+            <a href="events.html" class="btn btn-outline">
+              View All Events
+              <i class="fa-solid fa-chevron-right btn-icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-						<!-- Header -->
-							<header id="header">
-								<div class="inner">
+      <!-- Resources Section -->
+      <section id="resources" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge">Resources</div>
+            <h2 class="section-title">Learning Materials</h2>
+            <p class="section-description">
+              Access our curated collection of resources to enhance your knowledge.
+            </p>
+          </div>
+          
+          <div class="tabs-container">
+            <div class="tabs-list">
+              <button class="tab-trigger active" data-tab="beginners">Beginners</button>
+              <button class="tab-trigger" data-tab="intermediate">Intermediate</button>
+              <button class="tab-trigger" data-tab="advanced">Advanced</button>
+            </div>
+            
+            <div class="tab-content active" id="beginners-tab">
+              <div class="resources-list">
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">QFE Bonn Handbook</h3>
+                    <p class="resource-description">
+                      A beginner-friendly guide to kickstart your journey here.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">QFE Beginner Notebook</h3>
+                    <p class="resource-description">
+                      Learn the basics of data importing and cleaning using GMD and yfinance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="intermediate-tab">
+              <div class="resources-list">
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">
+                    <a href="https://www.datacamp.com/cheat-sheet/machine-learning-cheat-sheet">Datacamp Machine Learning Cheat Sheet</a>
+                    </h3>
+                    <p class="resource-description">
+                      In this cheat sheet, you'll have a guide around the top machine learning algorithms, their advantages and disadvantages, and use-cases.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">
+                    <a href="https://sites.google.com/view/datascience-cheat-sheets">Machine Learning Interview Cheatsheets</a>
+                    </h3>
+                    <p class="resource-description">
+                      This cheatsheet contains various Machine Learning related topics that can come in handy during your daily data-scientist life.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">QFE Intermediate Notebook</h3>
+                    <p class="resource-description">
+                      Learn web scraping, data importing and cleaning using QNT, requests, BeautifulSoup and Selenium.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="advanced-tab">
+              <div class="resources-list">
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">
+                    <a href="https://aeturrell.github.io/coding-for-economists/intro.html">Coding for Economists</a>
+                    </h3>
+                    <p class="resource-description">
+                      A guide for economists on what programming is, why it's useful, and how to do it.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">
+                    <a href="https://www.deeplearningbook.org/">Deep Learning Textbook</a>
+                    </h3>
+                    <p class="resource-description">
+                      This helps students and practitioners enter the field of machine learning in general and deep learning in particular.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="resource-item">
+                  <i class="fa-solid fa-book resource-icon"></i>
+                  <div class="resource-details">
+                    <h3 class="resource-title">
+                    <a href="https://cognitiveclass.ai/">Cognitive Class</a>
+                    </h3>
+                    <p class="resource-description">
+                      Empowering learners worldwide with free, cutting-edge courses in AI, Data Science, Blockchain, and more! Level up now!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-footer">
+            <a href="resources.html" class="btn btn-outline">
+              View All Resources
+              <i class="fa-solid fa-chevron-right btn-icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-									<!-- Logo -->
-										<h1><a href="index.html" id="logo">QFE Bonn</a></h1>
+      <!-- Join Section -->
+      <section id="join" class="section section-green">
+        <div class="container">
+          <div class="join-grid">
+            <div class="join-content">
+              <h2 class="section-title">Join Us</h2>
+              <p class="section-description">
+                Join our community of students passionate about quantitative finance and economics. Membership is open to all
+                regardless of experience level.
+              </p>
 
-									<!-- Nav -->
-										<nav id="nav">
-											<ul>
-												<li class="current_page_item"><a href="index.html">Homepage</a></li>
-												<li>
-													<a href="#">Infos</a>
-													<ul>
-														<li><a href="events.html">Events</a></li>
-														<li><a href="timeline.html">Timeline</a></li>
-														<li>
-															<a href="about_us.html">About us</a>
-															<ul>
-																<li><a href="economics_team.html">Economics Team</a></li>
-																<li><a href="finance_team.html">Finance Team</a></li>
-																<li><a href="quantitative_team.html">Quantitative Team</a></li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<li><a href="projects.html">Projects</a></li>
-												<li><a href="resources.html">Resources</a></li>
-											</ul>
-										</nav>
+              <div class="benefits-list">
+                <div class="benefit-item">
+                  <i class="fa-solid fa-chart-line benefit-icon"></i>
+                  <span>Access to all workshops and events</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa-solid fa-chart-line benefit-icon"></i>
+                  <span>Mentorship from experienced students</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa-solid fa-chart-line benefit-icon"></i>
+                  <span>Networking opportunities with industry professionals</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa-solid fa-chart-line benefit-icon"></i>
+                  <span>Participation in competitions and real-world quantitative projects</span>
+                </div>
+              </div>
 
-								</div>
-							</header>
+              <div class="join-buttons">
+                <button class="btn btn-primary btn-lg">
+                  <a href="https://docs.google.com/presentation/d/1AH5Ys_Em608ZTTvL9sjSp-mgzuGNFxta/edit?usp=sharing&ouid=111839148715847994525&rtpof=true&sd=true">
+                  <i class="fa-solid fa-download btn-icon-left"></i>
+                  QFE Bonn Introduction
+                  </a>
+                </button>
+              </div>
+            </div>
 
-						<!-- Banner -->
-							<div id="banner">
-								<h2><strong>Quantitative Finance & Economics Bonn</strong>
-								<br/>
-								creative, free and innovative </h2>
-							</div>
+            <div class="join-content">
+              <h2 class="section-title">How to Join</h2>
+              <p class="section-description">
+                We welcome students from diverse academic backgrounds, including finance, economics, mathematics, computer science, and engineering.
+              </p>
 
-					</div>
-				</div>
+              <div class="benefits-list">
+                <div class="benefit-item">
+                  <span><strong>Step 1:</strong> Fill out the application form</span>
+                </div>
+                <div class="benefit-item">
+                  <span><strong>Step 2:</strong> Come to our session with the form</span>
+                </div>
+                <div class="benefit-item">
+                  <span><strong>Step 3:</strong> Hand in the form to the team leads in presence</span>
+                </div>
+                <div class="benefit-item">
+                  <span><strong>Step 4:</strong> We will contact you for further meeting and you're done!</span>
+                </div>
+              </div>
+              
+              <div class="join-buttons">
+                <button class="btn btn-primary btn-lg">
+                  <a href="https://docs.google.com/presentation/d/1AH5Ys_Em608ZTTvL9sjSp-mgzuGNFxta/edit?usp=sharing&ouid=111839148715847994525&rtpof=true&sd=true">
+                  <i class="fa-solid fa-download btn-icon-left"></i>
+                  Application Form
+                  </a>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Resources Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">RESOURCES</h3>
+            <ul class="footer-list">
+              <li><a href="resources.html?category=general" class="footer-link">General</a></li>
+              <li><a href="resources.html?category=economics" class="footer-link">Economics</a></li>
+              <li><a href="resources.html?category=finance" class="footer-link">Finance</a></li>
+              <li><a href="resources.html?category=quantitative" class="footer-link">Quantitative</a></li>
+              <li><a href="resources.html?category=platform" class="footer-link">Platform</a></li>
+              <li><a href="resources.html?category=coding" class="footer-link">Coding</a></li>
+              <li><a href="resources.html?category=data-source" class="footer-link">Data Source</a></li>
+              <li><a href="resources.html?category=math-stat" class="footer-link">Math & Stat</a></li>
+              <li><a href="resources.html?category=ai-ml" class="footer-link">AI/ML</a></li>
+            </ul>
+          </div>
+          
+          <!-- Projects & Events Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">PROJECTS</h3>
+            <ul class="footer-list">
+              <li><a href="projects.html?tag=Summer%202025#projects-section" class="footer-link">Summer 2025</a></li>
+              <li><a href="projects.html?tag=Winter%202025/26#projects-section" class="footer-link">Winter 2025/26</a></li>
+            </ul>
+            
+            <h3 class="footer-heading footer-heading-spaced">EVENTS</h3>
+            <ul class="footer-list">
+              <li><a href="events.html?season=summer-2025#past-events-section" class="footer-link">Summer 2025</a></li>
+              <li><a href="events.html?season=winter-2025-26#past-events-section" class="footer-link">Winter 2025/26</a></li>
+            </ul>
+          </div>
+          
+          <!-- QFE Bonn Column -->
+          <div class="footer-column">
+            <div class="footer-logo-container">
+              <img src="/images/logo.png" alt="QFEbonn Logo" class="footer-logo">
+            </div>
+            
+            <p class="footer-copyright">
+              © 2025 Quantitative Finance & Economics Bonn<br>
+              All rights reserved.
+            </p>
+            
+            <div class="footer-social">
+              <a href="mailto:qfe.bonn@gmail.com" class="social-link" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://linkedin.com/company/qfe-bonn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/qfe-bonn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/qfe.bonn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-			<!-- Main Wrapper -->
-				<div id="main-wrapper">
-					<div class="wrapper style1">
-						<div class="inner">
-
-							<!-- Feature 1 -->
-								<section class="container box feature1">
-									<div class="row">
-										<div class="col-12">
-											<header class="first major">
-												<h2>Our Teams</h2>
-												<p>And this is where we talk about why we’re <strong>pretty awesome</strong> ...</p>
-											</header>
-										</div>
-										<div class="col-4 col-12-medium">
-											<section>
-												<img class="image featured" id="myImg" src="images/pic01.jpg" alt="Economics Team">
-												<header>
-													<h3>Economics</h3>
-													<p>Macroeconomic themes analysis</p>
-												</header>
-											</section>
-										</div>
-										<div class="col-4 col-12-medium">
-											<section>
-												<img class="image featured" id="myImg" src="images/pic02.jpg" alt="Finance team">
-												<header>
-													<h3>Finance</h3>
-													<p>Financial business analysis</p>
-												</header>
-											</section>
-										</div>
-										<div class="col-4 col-12-medium">
-											<section>
-												<img class="image featured" id="myImg" src="images/pic03.jpg" alt="Quant Team">
-												<header>
-													<h3>Quantitative</h3>
-													<p>Quantitative modelling</p>
-												</header>
-											</section>
-										</div>
-										<div class="col-12">
-											<p>We want to make sure that everyone is able to take part in the interesting topics that they want to explore</p>
-											<footer>
-												<a href="about_us.html" class="button medium icon solid fa-arrow-circle-right">Learn more</a>
-											</footer>
-										</div>
-									</div>
-								</section>
-
-						</div>
-					</div>
-					<div class="wrapper style2">
-						<div class="inner">
-
-							<!-- Feature 2 -->
-								<section class="container box feature2">
-									<div class="row">
-										<div class="col-12">
-											<section>
-												<header class="major">
-													<h2>Gallery</h2>
-												</header>
-													<div class="scroll-container">
-														<figure>
-															<img src="images/pic04.jpg" alt="Cinque Terre" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic05.jpg" alt="Forest" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic06.jpg" alt="Northern Lights" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic07.jpg" alt="Mountains" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic04.jpg" alt="Cinque Terre" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic05.jpg" alt="Forest" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic06.jpg" alt="Northern Lights" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-														<figure>
-															<img src="images/pic07.jpg" alt="Mountains" width="600" height="400">
-															<figcaption>Cinque Terre</figcaption>
-														</figure>
-													</div>
-											</section>
-										</div>
-									</div>
-								</section>
-
-							</div>
-					</div>
-					<div class="wrapper style3">
-						<div class="inner">
-							<div class="container">
-								<div class="row">
-									<div class="col-8 col-12-medium">
-										<!-- Article list -->
-											<section class="box article-list">
-												<h2 class="icon fa-file-alt">Recent Events</h2>
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<img class="image left" id="myImg" src="images/pic05.jpg" alt="Snow">
-														<div>
-															<header>
-																<span class="date">April 25 2025</span>
-																<h3>The first session</h3>
-															</header>
-															<p>
-															Our first internal session focused on brainstorming project ideas, forming teams,
-															and sharing knowledge in areas like portfolio theory, economic forecasting, and data analytics tools.
-															Members also familiarized themselves with the club workflow and expectations.
-															</p>
-														</div>
-													</article>
-
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<img class="image left" id="myImg" src="images/pic06.jpg" alt="Snow">
-														<div>
-															<header>
-																<span class="date">April 11 2025</span>
-																<h3>The birth of the club</h3>
-															</header>
-															<p>
-															QFE Bonn was officially launched to provide students with a platform to explore
-															and apply quantitative methods in finance and economics.
-															The founding members introduced the club's mission, structure, and plans for the semester.
-															</p>
-														</div>
-													</article>
-
-											</section>
-									</div>
-									<div class="col-4 col-12-medium">
-
-										<!-- Spotlight -->
-											<section class="box spotlight">
-												<h2 class="icon fa-file-alt">Upcoming</h2>
-												<article>
-													<header>
-														<h3>First open session</h3>
-														<p>June 6 2025</p>
-													</header>
-													<p>
-													QFE Bonn opens its doors to all interested students! This session introduced the club's vision,
-													project opportunities, and how to get involved. New attendees met current members, joined discussions,
-													and explored ways to contribute — whether as beginners or experienced analysts.
-													</p>
-													<footer>
-														<a href="https://docs.google.com/spreadsheets/d/1DyJI6CM3JcgixWppPpntjf9t4cY7cW3G/edit?usp=sharing&ouid=111839148715847994525&rtpof=true&sd=true" class="button alt icon solid fa-file-alt">Session Agenda</a>
-													</footer>
-												</article>
-											</section>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- Footer Wrapper -->
-				<div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section>
-										<h2>Resources</h2>
-										<ul class="divided">
-											<li><a href="resources.html#general">General</a></li>
-											<li><a href="resources.html#Economics">Economics</a></li>
-											<li><a href="resources.html#Finance">Finance</a></li>
-											<li><a href="resources.html#Quantitative">Quantitative</a></li>
-											<li><a href="resources.html#platform">Platform</a></li>
-											<li><a href="resources.html#coding">Coding</a></li>
-											<li><a href="resources.html#datasource">Data Source</a></li>
-											<li><a href="resources.html#mathstat">Math & Stat</a></li>
-											<li><a href="resources.html#aiml">AI/ML</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section>
-										<h2>Projects</h2>
-										<ul class="divided">
-											<li><a href="projects.html#projectssummer25">Summer 2025</a></li>
-											<li><a href="projects.html#projectswinter2526">Winter 2025/26</a></li>
-										</ul>
-									</section>
-
-								<!-- Links -->
-									<section>
-										<h2>Events</h2>
-										<ul class="divided">
-											<li><a href="events.html#eventssummer25">Summer 2025</a></li>
-											<li><a href="events.html#eventswinter2526">Winter 2025/26</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-6 col-12-medium imp-medium">
-
-								<!-- About -->
-									<section>
-										<h2><strong>QFE Bonn</strong></h2>
-										<p>Hi! This is <strong>QFE Bonn</strong>.</p>
-											<ul class="menu">
-												<li>&copy; 2025 Quantitative Finance & Economics Bonn</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-											</ul>
-											<dl class="contact">
-												<dt><a href="mailto:qfe.bonn@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></dt>
-												<dt><a href="https://linkedin.com/company/qfe-bonn" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></dt>
-												<dt><a href="https://github.com/qfe-bonn" class="icon brands fa-github"><span class="label">Github</span></a></dt>
-												<dt><a href="https://www.instagram.com/qfe.bonn" class="icon brands fa-instagram"><span class="label">Instagram</span></a></dt>
-											</dl>
-									</section>
-							</div>
-						</div>
-					</footer>
-				</div>
-
-		</div>
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-			<span class="close">×</span>
-			<img class="modal-content" id="img01">
-			<div id="caption"></div>
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/modal.js"></script>
-
-	</body>
+  <script src="script.js"></script>
+</body>
 </html>
