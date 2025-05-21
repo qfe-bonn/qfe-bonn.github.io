@@ -1,9 +1,9 @@
 /* Base Styles */
 :root {
-  --primary: #2e7d32; /* Green instead of blue */
-  --primary-hover: #1b5e20;
+  --primary: #008080;
+  --primary-hover: #006767;
   --primary-light: #e8f5e9;
-  --primary-dark: #1b5e20;
+  --primary-dark: #006767;
   --secondary: #757575; /* Grey */
   --background: #ffffff;
   --foreground: #212121;
