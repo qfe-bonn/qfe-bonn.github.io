@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Add active class to current page in navigation
-  const currentPage = window.location.pathname.split('/').pop();
+  const currentPage = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-link');
   
   navLinks.forEach(link => {
