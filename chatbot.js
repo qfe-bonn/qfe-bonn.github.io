@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       return `<p>We have several upcoming events:</p>
               <ul>
-                <li>Algorithmic Trading Workshop - May 25, 2025</li>
-                <li>Financial Modeling Competition - June 10, 2025</li>
-                <li>Industry Speaker Series - June 15, 2025</li>
+                <li>Project Session - May 23, 2025</li>
+                <li>Open Session - June 6, 2025</li>
+                <li>Quant Day - TBA, 2025</li>
               </ul>
               <p>Check out our <a href="events.html">Events page</a> for more details and registration.</p>`
     } else if (
@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (lowerMessage.includes("contact") || lowerMessage.includes("email") || lowerMessage.includes("reach")) {
       return `<p>You can contact us through:</p>
               <ul>
-                <li>Email: contact@qfeclub.edu</li>
-                <li>LinkedIn: <a href="https://linkedin.com/company/qfeclub" target="_blank">QFE Club</a></li>
-                <li>Visit us in person during our club hours</li>
+                <li>Email: qfe.bonn@gmail.com</li>
+                <li>LinkedIn: <a href="https://linkedin.com/company/qfe-bonn" target="_blank">QFE Bonn</a></li>
+                <li>Visit us in person during our session hours</li>
               </ul>
               <p>Our team typically responds within 24-48 hours.</p>`
     } else if (lowerMessage.includes("thank")) {
