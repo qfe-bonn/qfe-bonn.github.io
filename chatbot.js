@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check for keywords and return appropriate response
     if (lowerMessage.includes("hello") || lowerMessage.includes("hi") || lowerMessage.includes("hey")) {
       return "Hello! How can I help you today?"
-    } else if (lowerMessage.includes("join") || lowerMessage.includes("membership") || lowerMessage.includes("apply")) {
+    } else if (lowerMessage.includes("join") || lowerMessage.includes("member") || lowerMessage.includes("membership") || lowerMessage.includes("apply")) {
       return `<p>To join our club, follow these steps:</p>
               <ol>
                 <li>Fill out the application form</li>
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       return `<p>I'm not sure I understand your question. Here are some topics I can help with:</p>
               <ul>
-                <li>Club membership</li>
+                <li>Membership</li>
                 <li>Upcoming events</li>
                 <li>Resources</li>
                 <li>Projects</li>
