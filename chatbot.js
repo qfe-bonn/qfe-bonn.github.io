@@ -104,11 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (lowerMessage.includes("join") || lowerMessage.includes("member") || lowerMessage.includes("membership") || lowerMessage.includes("apply")) {
       return `<p>To join our club, follow these steps:</p>
               <ol>
-                <li>Fill out the application form</li>
-                <li>Come to any of our sessions</li>
-                <li>Hand in the application form to the team leads in person</li>
-                <li>We will contact you for a further meeting</li>
+                1. Fill out the application form <br>
+                2. Come to any of our sessions <br>
+                3. Hand in the application form to the team leads in person <br>
+                4. We will contact you for a further meeting
               </ol>
+              <br>
               <p>You can find more details in the <a href="#join-section">Join Us</a> section of our website.</p>`
     } else if (
       lowerMessage.includes("event") ||
@@ -121,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>Open Session - June 6, 2025</li>
                 <li>Quant Day - TBA, 2025</li>
               </ul>
-              <p>Check out our <a href="events.html">Events page</a> for more details and registration.</p>`
+              <p>Check out our <a href="/events/index.html">Events page</a> for more details and registration.</p>`
     } else if (
       lowerMessage.includes("resource") ||
       lowerMessage.includes("material") ||
@@ -134,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>Programming tutorials for financial applications</li>
                 <li>Research papers and case studies</li>
               </ul>
-              <p>Visit our <a href="resources.html">Resources page</a> to explore all available materials.</p>`
+              <p>Visit our <a href="/resources/index.html">Resources page</a> to explore all available materials.</p>`
     } else if (lowerMessage.includes("project") || lowerMessage.includes("research")) {
       return `<p>Our club works on various projects throughout the year, including:</p>
               <ul>
@@ -143,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>Risk management models</li>
                 <li>Market prediction using machine learning</li>
               </ul>
-              <p>Check out our <a href="projects.html">Projects page</a> to see our current and past projects.</p>`
+              <p>Check out our <a href="/projects/index.html">Projects page</a> to see our current and past projects.</p>`
     } else if (lowerMessage.includes("contact") || lowerMessage.includes("email") || lowerMessage.includes("reach")) {
       return `<p>You can contact us through:</p>
               <ul>
