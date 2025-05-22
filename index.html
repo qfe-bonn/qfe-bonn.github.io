@@ -388,6 +388,56 @@
           </div>
         </div>
       </section>
+
+      <!-- AI Chatbot -->
+      <div class="chatbot">
+        <button class="chatbot-toggle" aria-label="Open chat assistant">
+          <i class="fa-solid fa-comment-dots"></i>
+        </button>
+        
+        <div class="chatbot-container">
+          <div class="chatbot-header">
+            <div class="chatbot-title">
+              <i class="fa-solid fa-robot"></i>
+              <span>QFE Assistant</span>
+            </div>
+            <button class="chatbot-close" aria-label="Close chat">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          
+          <div class="chatbot-messages">
+            <div class="message bot-message">
+              <div class="message-content">
+                <p>👋 Hi there! I'm the QFE Club's virtual assistant. How can I help you today?</p>
+              </div>
+              <div class="message-time">Just now</div>
+            </div>
+            
+            <div class="message bot-message">
+              <div class="message-content">
+                <p>You can ask me about:</p>
+                <ul>
+                  <li>Club membership</li>
+                  <li>Upcoming events</li>
+                  <li>Resources</li>
+                  <li>Projects</li>
+                  <li>Contact information</li>
+                </ul>
+              </div>
+              <div class="message-time">Just now</div>
+            </div>
+          </div>
+          
+          <div class="chatbot-input">
+            <input type="text" placeholder="Type your message..." aria-label="Type your message">
+            <button class="send-button" aria-label="Send message">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </main>
     
     <footer class="site-footer">
@@ -456,5 +506,6 @@
   </div>
 
   <script src="/script.js"></script>
+  <script src="/chatbot.js"></script>
 </body>
 </html>
