@@ -319,6 +319,22 @@ a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+/* Slideshow fade animation */
+.fade-slide {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+  animation: fade 5s forwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* Section Styles */
 .section {
   width: 100%;
