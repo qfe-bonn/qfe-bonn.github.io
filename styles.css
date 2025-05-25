@@ -1924,7 +1924,7 @@ a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background: none;
   border: none;
   padding: 0;
-  text-align: left;
+  text-align: inherit;
   cursor: pointer;
   font-family: inherit;
 }
