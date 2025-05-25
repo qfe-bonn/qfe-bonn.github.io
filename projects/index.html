@@ -255,13 +255,98 @@
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
+
+            <div class="footer-legal">
+              <a href="/impressum/" class="legal-link">Impressum</a>
+              <a href="/datenschutz/" class="legal-link">Datenschutz</a>
+              <button id="open-cookie-settings" class="legal-link cookie-settings-btn">Cookie-Einstellungen</button>
+            </div>
+
           </div>
         </div>
       </div>
     </footer>
   </div>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3>Cookie-Einstellungen</h3>
+        <p>Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten. Dazu gehören notwendige Cookies für die Funktionalität und optionale Cookies für Marketing und Statistiken.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button id="accept-all-cookies" class="btn btn-primary">Alle akzeptieren</button>
+        <button id="accept-necessary-cookies" class="btn btn-outline">Nur notwendige</button>
+        <button id="cookie-settings" class="btn btn-outline">Einstellungen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookie-modal" class="cookie-modal hidden">
+    <div class="cookie-modal-overlay"></div>
+    <div class="cookie-modal-content">
+      <div class="cookie-modal-header">
+        <h2>Cookie-Einstellungen</h2>
+        <button id="close-cookie-modal" class="cookie-modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      
+      <div class="cookie-modal-body">
+        <div class="cookie-info">
+          <p>
+            Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten. Dazu gehören notwendige Cookies für die Funktionalität und optionale Cookies für Marketing und Statistiken. Sie können wählen, welche Arten von Cookies Sie akzeptieren möchten.
+          </p>
+        </div>
+
+        <div class="cookie-categories">
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <h3>Notwendige Cookies</h3>
+              <div class="cookie-toggle">
+                <input type="checkbox" id="necessary-cookies" checked disabled>
+                <label for="necessary-cookies" class="toggle-label disabled">
+                  <span class="toggle-slider"></span>
+                  <i class="fa-solid fa-check toggle-check"></i>
+                </label>
+              </div>
+            </div>
+            <p class="cookie-description">
+              Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie ermöglichen grundlegende Funktionen wie Seitennavigation und Zugriff auf sichere Bereiche.
+            </p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <h3>Marketing & Statistiken</h3>
+              <div class="cookie-toggle">
+                <input type="checkbox" id="marketing-statistics-cookies">
+                <label for="marketing-statistics-cookies" class="toggle-label">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+            <p class="cookie-description">
+              Diese Cookies ermöglichen erweiterte Funktionen wie den Chatbot, helfen uns die Website-Nutzung zu verstehen und ermöglichen personalisierte Inhalte und Werbung.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-modal-footer">
+        <button id="save-cookie-settings" class="btn btn-primary">Einstellungen speichern</button>
+        <button id="accept-all-cookies-modal" class="btn btn-outline">Alle akzeptieren</button>
+        <button id="reject-all-cookies" class="btn btn-outline">Nur notwendige</button>
+      </div>
+    </div>
+  </div>
+
   <script src="/script.js"></script>
   <script src="/projects/projects.js"></script>
+  <script src="/cookie-consent.js"></script>
+  <script src="/chatbot.js"></script>
+
 </body>
 </html>

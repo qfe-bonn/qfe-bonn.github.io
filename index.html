@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QFE Bonn</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/klaro.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/large_logo.png" />
 </head>
@@ -79,20 +80,20 @@
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-icon-wrapper">
-                <i class="fa-solid fa-graduation-cap feature-icon"></i>
+                <i class="fa-solid fa-code feature-icon"></i>
               </div>
-              <h3 class="feature-title">Education</h3>
+              <h3 class="feature-title">Programming Skills</h3>
               <p class="feature-description">
-                Workshops, seminars, and study groups on quantitative methods, financial modeling, and programming.
+                Develop proficiency in Python, R, and other programming languages essential for quantitative finance applications.
               </p>
             </div>
             <div class="feature-card">
               <div class="feature-icon-wrapper">
                 <i class="fa-solid fa-chart-line feature-icon"></i>
               </div>
-              <h3 class="feature-title">Research</h3>
+              <h3 class="feature-title">Market Analysis</h3>
               <p class="feature-description">
-                Collaborative research projects on market trends, algorithmic trading, and financial data analysis.
+                Learn advanced techniques for analyzing financial markets using statistical models and machine learning algorithms.
               </p>
             </div>
             <div class="feature-card">
@@ -101,7 +102,7 @@
               </div>
               <h3 class="feature-title">Networking</h3>
               <p class="feature-description">
-                Connections with industry professionals, alumni, and peer organizations in the finance sector.
+                Connections with industry professionals, alumni, and peer organizations in the economics and finance sector.
               </p>
             </div>
           </div>
@@ -403,10 +404,6 @@
         </div>
       </section>
 
-      <!-- AI Chatbot -->
-      <script
-        src='https://cdn.jotfor.ms/agent/embedjs/0196f935c8dc73e792f34b9ae501d9dbe1fa/embed.js?skipWelcome=1&maximizable=1'>
-      </script>
       <!-- <div class="chatbot">
         <button class="chatbot-toggle" aria-label="Open chat assistant">
           <i class="fa-solid fa-comment-dots"></i>
@@ -454,7 +451,6 @@
           </div>
         </div>
       </div> -->
-
     </main>
     
     <footer class="site-footer">
@@ -516,14 +512,98 @@
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
+
+            <div class="footer-legal">
+              <a href="/impressum/" class="legal-link">Impressum</a>
+              <a href="/datenschutz/" class="legal-link">Datenschutz</a>
+              <button id="open-cookie-settings" class="legal-link cookie-settings-btn">Cookie-Einstellungen</button>
+            </div>
+
           </div>
         </div>
       </div>
     </footer>
   </div>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3>Cookie-Einstellungen</h3>
+        <p>Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten. Dazu gehören notwendige Cookies für die Funktionalität und optionale Cookies für Marketing und Statistiken.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button id="accept-all-cookies" class="btn btn-primary">Alle akzeptieren</button>
+        <button id="accept-necessary-cookies" class="btn btn-outline">Nur notwendige</button>
+        <button id="cookie-settings" class="btn btn-outline">Einstellungen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookie-modal" class="cookie-modal hidden">
+    <div class="cookie-modal-overlay"></div>
+    <div class="cookie-modal-content">
+      <div class="cookie-modal-header">
+        <h2>Cookie-Einstellungen</h2>
+        <button id="close-cookie-modal" class="cookie-modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      
+      <div class="cookie-modal-body">
+        <div class="cookie-info">
+          <p>
+            Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten. Dazu gehören notwendige Cookies für die Funktionalität und optionale Cookies für Marketing und Statistiken. Sie können wählen, welche Arten von Cookies Sie akzeptieren möchten.
+          </p>
+        </div>
+
+        <div class="cookie-categories">
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <h3>Notwendige Cookies</h3>
+              <div class="cookie-toggle">
+                <input type="checkbox" id="necessary-cookies" checked disabled>
+                <label for="necessary-cookies" class="toggle-label disabled">
+                  <span class="toggle-slider"></span>
+                  <i class="fa-solid fa-check toggle-check"></i>
+                </label>
+              </div>
+            </div>
+            <p class="cookie-description">
+              Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie ermöglichen grundlegende Funktionen wie Seitennavigation und Zugriff auf sichere Bereiche.
+            </p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <h3>Marketing & Statistiken</h3>
+              <div class="cookie-toggle">
+                <input type="checkbox" id="marketing-statistics-cookies">
+                <label for="marketing-statistics-cookies" class="toggle-label">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+            <p class="cookie-description">
+              Diese Cookies ermöglichen erweiterte Funktionen wie den Chatbot, helfen uns die Website-Nutzung zu verstehen und ermöglichen personalisierte Inhalte und Werbung.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-modal-footer">
+        <button id="save-cookie-settings" class="btn btn-primary">Einstellungen speichern</button>
+        <button id="accept-all-cookies-modal" class="btn btn-outline">Alle akzeptieren</button>
+        <button id="reject-all-cookies" class="btn btn-outline">Nur notwendige</button>
+      </div>
+    </div>
+  </div>
+
   <script src="/script.js"></script>
   <script src="/slideshow.js"></script>
+  <script src="/cookie-consent.js"></script>
   <script src="/chatbot.js"></script>
+
 </body>
 </html>
