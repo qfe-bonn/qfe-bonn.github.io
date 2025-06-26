@@ -1246,7 +1246,7 @@ a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 @media (min-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
